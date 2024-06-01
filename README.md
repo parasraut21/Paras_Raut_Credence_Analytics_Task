@@ -62,6 +62,13 @@ This project is built using React.js for the frontend and Node.js with Express.j
 - **Request Type**: DELETE
 - **Response**: Success message or error message.
 
+## Database Screens
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/9d446a43-0a9d-4b0e-958a-8df9ec547532)
+
+## Thunder Client API Testing Screen
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/a58e6d12-d86e-4af4-b334-bb5b299af04f)
+
+
 ## Frontend Screens
 
 ### Home
@@ -71,7 +78,7 @@ This project is built using React.js for the frontend and Node.js with Express.j
 - **Features**: View, Edit, and Delete buttons for each book.
   
 ### Add Book
-
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/ada954a3-dc2f-46a6-99d3-d097f36929c8)
 - **Description**: Form to add a new book with fields for name, image URL, and summary.
 - **Features**: Submit button to add the book to the database.
 
@@ -82,17 +89,19 @@ This project is built using React.js for the frontend and Node.js with Express.j
 - **Features**: Submit button to update the book in the database.
 
 ### Delete Book
-![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/ce9b2b46-b06b-4b74-80e1-ef8da45d8b98)
-
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/299cb625-6fd8-4c84-9106-5530f2647c2b)
 - **Description**: Delete an existing book .
 - **Features**: Click button to delete the book in the database.
-![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/299cb625-6fd8-4c84-9106-5530f2647c2b)
+
 ![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/86950682-ef22-423f-a802-136605c51d6a)
+
+- Deleted Sucessfully
+  
 ![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/3f952889-fe84-49da-8be5-631c2fc3ad73)
 
 
 ### Book Detail
-
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/bf9c62be-ff42-40f0-9fb2-28265b92e73f)
 - **Description**: Displays detailed information about a single book, including its name, image, and summary.
 - **Features**: Back button to navigate back to the home screen.
 
