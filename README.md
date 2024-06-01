@@ -1,40 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Credence Analytics Backend Task
 
-## Getting Started
+- **This project is designed to manage a collection of books, allowing users to view, add, edit, and delete books.**
 
-First, run the development server:
+## **Paras Raut** 
+## **Ph No. +91 9356375273** 
+## **Linkedin :- https://www.linkedin.com/in/paras-raut/** 
+## **Github :- https://github.com/parasraut21** 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Technologies Used](#technologies-used)
+3. [Backend APIs](#backend-apis)
+4. [Frontend Screens](#frontend-screens)
+5. [Setup Instructions](#setup-instructions)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Introduction
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+This project is built using React.js for the frontend and Node.js with Express.js for the backend. It provides functionalities to manage a collection of books, including viewing, adding, editing, and deleting books.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend**: React.js, Next.js, Tailwind CSS
+- **Backend**: Node.js, Express.js, MongoDB
+- **API Communication**: Axios
+- **Routing**: Next.js Router
+- **State Management**: React Hooks
+- **Database**: MongoDB Atlas
 
-## Learn More
+## Backend APIs
 
-To learn more about Next.js, take a look at the following resources:
+### GET /api/books
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Description**: Retrieve all books from the database.
+- **Request Type**: GET
+- **Response**: Array of book objects containing information such as name, image URL, and summary.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### POST /api/books
 
-## Deploy on Vercel
+- **Description**: Add a new book to the database.
+- **Request Type**: POST
+- **Request Body**: JSON object containing name, image URL, and summary of the book.
+- **Response**: Success message or error message.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### GET /api/books/:id
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Description**: Retrieve a specific book by its ID from the database.
+- **Request Type**: GET
+- **Response**: Book object containing information such as name, image URL, and summary.
+
+### PUT /api/books/:id
+
+- **Description**: Update an existing book in the database.
+- **Request Type**: PUT
+- **Request Body**: JSON object containing updated name, image URL, and summary of the book.
+- **Response**: Success message or error message.
+
+### DELETE /api/books/:id
+
+- **Description**: Delete a book from the database by its ID.
+- **Request Type**: DELETE
+- **Response**: Success message or error message.
+
+## Frontend Screens
+
+### Home
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/aa07c780-8223-48e1-b1d4-ba2f3a89415e)
+
+- **Description**: Displays a grid of books with their images, names, and summaries.
+- **Features**: View, Edit, and Delete buttons for each book.
+  
+### Add Book
+
+- **Description**: Form to add a new book with fields for name, image URL, and summary.
+- **Features**: Submit button to add the book to the database.
+
+### Edit Book
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/ce9b2b46-b06b-4b74-80e1-ef8da45d8b98)
+
+- **Description**: Form to edit an existing book with fields for name, image URL, and summary.
+- **Features**: Submit button to update the book in the database.
+
+### Delete Book
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/ce9b2b46-b06b-4b74-80e1-ef8da45d8b98)
+
+- **Description**: Delete an existing book .
+- **Features**: Click button to delete the book in the database.
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/299cb625-6fd8-4c84-9106-5530f2647c2b)
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/86950682-ef22-423f-a802-136605c51d6a)
+![image](https://github.com/parasraut21/Paras_Raut_Credence_Analytics_Task/assets/111653346/3f952889-fe84-49da-8be5-631c2fc3ad73)
+
+
+### Book Detail
+
+- **Description**: Displays detailed information about a single book, including its name, image, and summary.
+- **Features**: Back button to navigate back to the home screen.
+
+## Setup Instructions
+
+1. Clone the repository: `git clone <repository-url>`
+2. Install dependencies:
+   - Frontend: `cd frontend && npm install`
+   - Backend: `cd backend && npm install`
+3. Set up MongoDB Atlas and configure the connection string in the backend.
+4. Start the backend server: `cd backend && npm start`
+5. Start the frontend server: `cd frontend && npm start`
+6. Access the application in your browser at `http://localhost:3000`.
+
